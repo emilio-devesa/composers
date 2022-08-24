@@ -6,6 +6,7 @@
 import gi
 gi.require_version("Gtk","3.0")
 from gi.repository import Gtk, GdkPixbuf
+from cell import Cell
 
 class MainWindow(Gtk.Window):
     flowbox=Gtk.FlowBox()
@@ -45,6 +46,11 @@ class MainWindow(Gtk.Window):
         vbox.pack_start(scrolled, True, True, 0)
         # Y la vBox a la ventana
         self.add(vbox)
+
+        # Para cada elemento del catálogo, construimos su celda y la añadimos al Flowbox
+        for item in data_source:
+            cell=Cell(item.get("name"),item.get("gtk_image"),item.get("description"),item.get("biography"))
+            self.flowbox.add(cell)
 
     
     def on_help_about(self, widget):
