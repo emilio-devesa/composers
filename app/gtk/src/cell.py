@@ -6,6 +6,7 @@
 import gi
 gi.require_version("Gtk","3.0")
 from gi.repository import Gtk, GdkPixbuf
+from detail_window import DetailWindow
 
 class Cell(Gtk.EventBox):
     name=None
@@ -29,3 +30,6 @@ class Cell(Gtk.EventBox):
 
     def on_click(self,widget,event):
         print("Se ha clicado la celda de "+self.name)
+        self.description=Gtk.Label("Imagen del compositor "+self.name)
+        detail_win=DetailWindow(self.nombre,self.miPixbuf,self.description,self.biography)
+        detail_win.show_all()
