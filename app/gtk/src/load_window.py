@@ -43,7 +43,7 @@ class LoadWindow(Gtk.Window):
             r=requests.get(image_url,stream=True)
             with open("temp.png","wb") as f:
                 shutil.copyfileobj(r.raw,f)
-            pixbuf = GdkPixbuf.Pixbuf.new_from_file(".temp.png")
+            pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale(".temp.png", 200, 200, False)
             result.append({"name":name,"description":description,"gtk_image":pixbuf,"biography":biography})
             GLib.idle_add(self.start_main_window,result)
     
