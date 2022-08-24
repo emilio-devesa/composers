@@ -7,6 +7,7 @@ import gi
 gi.require_version("Gtk","3.0")
 from gi.repository import Gtk, GdkPixbuf
 from cell import Cell
+from about_window import AboutWindow
 
 class MainWindow(Gtk.Window):
     flowbox=Gtk.FlowBox()
@@ -55,3 +56,6 @@ class MainWindow(Gtk.Window):
     
     def on_help_about(self, widget):
         print("Se ha pulsado la opcion 'Acerca De' del menu 'Ayuda'")
+        about_window=AboutWindow()
+        about_window.show_all()
+        
