@@ -24,7 +24,6 @@ class MainWindow(Gtk.Window):
         scrolled=Gtk.ScrolledWindow()
         scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
         scrolled.add(self.flowbox)
-        self.add(scrolled)
 
         # Creamos la barra de menus, el titulo del menu, el submenu y los elementos hijos
         menu_bar=Gtk.MenuBar()
@@ -39,6 +38,13 @@ class MainWindow(Gtk.Window):
         
         # Conectamos las opciones del menu con sus correspondientes funciones
         menu_help_about.connect("activate", self.on_help_about)
+        
+        # Creamos una caja vertical y añadimos primero el menu y despues la ScrolledWindow que ya teníamos
+        vbox = Gtk.VBox(False, 2)
+        vbox.pack_start(menu_bar, False, False, 0)
+        vbox.pack_start(scrolled, True, True, 0)
+        # Y la vBox a la ventana
+        self.add(vbox)
 
     
     def on_help_about(self, widget):
