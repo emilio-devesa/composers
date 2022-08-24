@@ -39,7 +39,7 @@ class LoadWindow(Gtk.Window):
             name=json_item.get("name")
             description=json_item.get("description")
             image_url=json_item.get("image_url")
-            biography=json.item.get("biography")
+            biography=json_item.get("biography")
             r=requests.get(image_url,stream=True)
             with open("temp.png","wb") as f:
                 shutil.copyfileobj(r.raw,f)
