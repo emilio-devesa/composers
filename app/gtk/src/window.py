@@ -25,3 +25,21 @@ class MainWindow(Gtk.Window):
         scrolled.set_policy(Gtk.PolicyType.NEVER, Gtk.PolicyType.AUTOMATIC)
         scrolled.add(self.flowbox)
         self.add(scrolled)
+
+        # Creamos la barra de menus, el titulo del menu, el submenu y los elementos hijos
+        menu_bar=Gtk.MenuBar()
+        menu_help=Gtk.MenuItem("Ayuda")
+        menu_help_submenu=Gtk.Menu()
+        menu_help_about=Gtk.MenuItem("Acerca De")
+        
+        # Conectamos entre sí de forma jerárquica los elementos anteriores
+        menu_bar.append(menu_help)
+        menu_help.set_submenu(menu_help_submenu)
+        menu_help_submenu.append(menu_help_about)
+        
+        # Conectamos las opciones del menu con sus correspondientes funciones
+        menu_help_about.connect("activate", self.on_help_about)
+
+    
+    def on_help_about(self, widget):
+        print("Se ha pulsado la opcion 'Acerca De' del menu 'Ayuda'")
