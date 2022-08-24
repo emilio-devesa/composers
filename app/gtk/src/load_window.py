@@ -6,6 +6,7 @@
 import gi, requests, threading, shutil
 gi.require_version("Gtk","3.0")
 from gi.repository import Gtk, GLib, GdkPixbuf
+from window import MainWindow
 
 class LoadWindow(Gtk.Window):
     label=Gtk.Label("Cargando elementos...")
@@ -42,5 +43,12 @@ class LoadWindow(Gtk.Window):
             r=requests.get(image_url,stream=True)
             with open("temp.png","wb") as f:
                 shutil.copyfileobj(r.raw,f)
-            pixbuf = GdkPixbuf.Pixbuf.new_from_file("temp.png")
+            pixbuf = GdkPixbuf.Pixbuf.new_from_file(".temp.png")
             result.append({"name":name,"description":description,"gtk_image":pixbuf,"biography":biography})
+            GLib.idle_add(self.start_main_window,result)
+    
+    def start_main_window(self,loaded_items_list):
+        win=MainWindow(loaded_items_list)
+        win.show_all()
+        self.disconnect_by_func(Gtk.main_quit)
+        self.close()
