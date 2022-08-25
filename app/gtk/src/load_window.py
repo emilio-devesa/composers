@@ -41,11 +41,11 @@ class LoadWindow(Gtk.Window):
             image_url=json_item.get("image_url")
             biography=json_item.get("biography")
             r=requests.get(image_url,stream=True)
-            with open("temp.png","wb") as f:
+            with open(".temp.png","wb") as f:
                 shutil.copyfileobj(r.raw,f)
-            pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale("temp.png", 200, 200, False)
+            pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale(".temp.png", 200, 200, False)
             result.append({"name":name,"description":description,"gtk_image":pixbuf,"biography":biography})
-            GLib.idle_add(self.start_main_window,result)
+        GLib.idle_add(self.start_main_window,result)
     
     def start_main_window(self,loaded_items_list):
         win=MainWindow(loaded_items_list)

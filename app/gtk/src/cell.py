@@ -18,8 +18,8 @@ class Cell(Gtk.EventBox):
         super().__init__()
         self.name=name
         self.pixbuf=image
-        self.description=description
-        self.biography=biography
+        self.description=Gtk.Label("Imagen del compositor "+self.name)
+        self.biography=Gtk.Label(biography)
         imagen=Gtk.Image()
         imagen.set_from_pixbuf(self.pixbuf)
         box=Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=4)
@@ -30,6 +30,5 @@ class Cell(Gtk.EventBox):
 
     def on_click(self,widget,event):
         print("Se ha clicado la celda de "+self.name)
-        self.description=Gtk.Label("Imagen del compositor "+self.name)
-        detail_win=DetailWindow(self.nombre,self.miPixbuf,self.description,self.biography)
+        detail_win=DetailWindow(self.name,self.pixbuf,self.description,self.biography)
         detail_win.show_all()
