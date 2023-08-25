@@ -2,55 +2,55 @@
     {
         "name": "Tomaso Climene Albinoni",
         "description": "Imagen del compositor Tomaso Climene Albinoni",
-        "image_url": "https://raw.githubusercontent.com/emilio-devesa/composers/resources/res/images/albinoni.jpg",
+        "image_url": "https://raw.githubusercontent.com/emiliodevesadrums/composers/resources/res/images/albinoni.jpg",
         "biography": "Nació en Venecia, Italia. Si bien fue un compositor prolífico y popular junto a Vivaldi, su estilo nunca fue innovador. Sin embargo, compuso numerosas obras: 60 conciertos, 80 sonatas, 80 cantatas y 80 óperas."
     },
     {
         "name": "Johann Sebastian Bach",
         "description": "Imagen del compositor Johann Sebastian Bach",
-        "image_url": "https://raw.githubusercontent.com/emilio-devesa/composers/resources/res/images/bach.jpg",
+        "image_url": "https://raw.githubusercontent.com/emiliodevesadrums/composers/resources/res/images/bach.jpg",
         "biography": "Nació en Alemania. El más grande del Barroco junto con Handel. Utilizó la fuga como forma estilo de expresión, cosa que en su época se consideraba raro. Sus trabajo más famosos: El Concierto de Brandenburgo, su fuga aplicada a Misa en Si menor y Pasión de San Mateo."
     },
     {
         "name": "Wolfgang Amadeus Mozart",
         "description": "Imagen del compositor Wolfgang Amadeus Mozart",
-        "image_url": "https://raw.githubusercontent.com/emilio-devesa/composers/resources/res/images/mozart.jpg",
+        "image_url": "https://raw.githubusercontent.com/emiliodevesadrums/composers/resources/res/images/mozart.jpg",
         "biography": "Nació en Salsburgo, Austria. Compositor clásico que escribió música de diversos géneros: óperas, requiems, cuartetos de cuerdas, conciertos y sinfonías. Además compuso melodías populares inolvidables."
     },
     {
         "name": "Ludwig Van Beethoven",
         "description": "Imagen del compositor Ludwig Van Beethoven",
-        "image_url": "https://raw.githubusercontent.com/emilio-devesa/composers/resources/res/images/beethoven.jpg",
+        "image_url": "https://raw.githubusercontent.com/emiliodevesadrums/composers/resources/res/images/beethoven.jpg",
         "biography": "Nació en Bonn, Alemania. Sin duda uno de los más grandes compositores clásicos de la historia. No por la cantidad de obras como Mozart, sino por la inflección humana con que vistió sus obras. Beethoven no escatimó tiempo ni inteligencia para dotar a cada nota con su timbre adecuado. Sus conciertos son sinfonías que se componen de múltiples instrumentos los cuales expresan en profundidad el sentimiento del más famoso de los compositores." 
     },
     {
         "name": "Achille-Claude Debussy",
         "description": "Imagen del compositor Achille-Claude Debussy",
-        "image_url": "https://raw.githubusercontent.com/emilio-devesa/composers/resources/res/images/debussy.jpg",
+        "image_url": "https://raw.githubusercontent.com/emiliodevesadrums/composers/resources/res/images/debussy.jpg",
         "biography": "Nació en Saint Germain, Francia. La mente musical más original del siglo 20. En vez de conservar estructuras tradicionales, Debussy cuestionó la esencia de la forma y organización de la temática occidental. Sus composiciones elevaron el nivel de coloratura, sonido y dieron relevancia al silencio dentro de la estructura musical. Compuso el hoy célebre Preludio y las Nocturnas para orquesta."
     },
     {
         "name": "Georg Friedrich Händel",
         "description": "Imagen del compositor Georg Friedrich Händel",
-        "image_url": "https://raw.githubusercontent.com/emilio-devesa/composers/resources/res/images/handel.jpg",
+        "image_url": "https://raw.githubusercontent.com/emiliodevesadrums/composers/resources/res/images/handel.jpg",
         "biography": "Nació en Halle, Alemania. Sus trabajos se realizaron casi enteramente en Londres. Compuso óperas, oratorios, conciertos para órgano: El Mesías."
     },
     {
         "name": "Georg Philipp Telemann",
         "description": "Imagen del compositor Georg Philipp Telemann",
-        "image_url": "https://raw.githubusercontent.com/emilio-devesa/composers/resources/res/images/telemann.jpg",
+        "image_url": "https://raw.githubusercontent.com/emiliodevesadrums/composers/resources/res/images/telemann.jpg",
         "biography": "Nació en Magdeburgo, Alemania. Compositor, pianista, flautista y violinista, director de ópera. Escribió música religiosa para coros, obras instrumentales aptas para todo ejecutante."
     },
     {
         "name": "Franz Liszt",
         "description": "Imagen del compositor Franz Liszt",
-        "image_url": "https://raw.githubusercontent.com/emilio-devesa/composers/resources/res/images/liszt.jpg",
+        "image_url": "https://raw.githubusercontent.com/emiliodevesadrums/composers/resources/res/images/liszt.jpg",
         "biography": "Nació en Raiding, Hungría. Pianista eximio y compositor que ha influenciado a todos los compositores clásicos del siglo XX. Proponía a sus pares crear música del futuro, entre ellos: Chopin, Schumann, Mendelssohn y Wagner. Estudios para piano, sinfonías, conciertos y rapsodias inigualables son legado de Franz Liszt."
     },
     {
         "name": "Wilhelm Richard Wagner",
         "description": "Imagen del compositor Wilhelm Richard Wagner",
-        "image_url": "https://raw.githubusercontent.com/emilio-devesa/composers/resources/res/images/wagner.jpg",
+        "image_url": "https://raw.githubusercontent.com/emiliodevesadrums/composers/resources/res/images/wagner.jpg",
         "biography": "Nació en Leipzig, Alemania. Compositor, director de orquesta, poeta y escritor. Su estilo y el de otros pocos maestros, cambió el curso de la historia de la música e influenció a muchos maestros posteriores a él. Wagner realizó buena parte de su obra en torno a la literatura del medioevo alemán. Destacó con sus óperas."
     }
 ]
