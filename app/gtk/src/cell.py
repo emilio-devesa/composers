@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Emilio Devesa
-# https://emiliodevesa.wordpress.com/
-
 import gi
 gi.require_version("Gtk","3.0")
 from gi.repository import Gtk, GdkPixbuf
