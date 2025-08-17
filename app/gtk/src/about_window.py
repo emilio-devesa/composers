@@ -8,7 +8,8 @@ class AboutWindow(Gtk.Window):
 
     label=Gtk.Label("""
         Emilio Devesa
-        http://emiliodevesa.wordpress.com/
+        https://emiliodevesa.com/
+        https://github.com/emilio-devesa/
         """)
 
     def __init__(self):

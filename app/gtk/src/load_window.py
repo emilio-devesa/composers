@@ -29,7 +29,7 @@ class LoadWindow(Gtk.Window):
         thread.start()
     
     def load_json(self):
-        response=requests.get("https://raw.githubusercontent.com/emiliodevesadrums/composers/resources/res/catalog.json")
+        response=requests.get("https://raw.githubusercontent.com/emilio-devesa/composers/resources/res/catalog.json")
         json_list=response.json() #Asumimos que la petición se completó con éxito, o fallará si no lo ha hecho
         result=[]
         for json_item in json_list:
